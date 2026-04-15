@@ -15,6 +15,7 @@ import gaseosas from "@/assets/gaseosas.png";
 import jugos from "@/assets/jugos.png";
 import cervezas from "@/assets/cervezas.png";
 import tragos from "@/assets/tragos.png";
+import OptimizedImage from "@/components/OptimizedImage";
 
 type Category = "brasa" | "parrillas" | "especiales" | "acompañamientos" | "bebidas";
 
@@ -107,11 +108,12 @@ const MenuSection = () => {
             >
               {item.img && (
                 <div className="overflow-hidden h-48">
-                  <img
+                  <OptimizedImage
                     src={item.img}
                     alt={item.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
+                    placeholder="skeleton"
+                    context="menu"
                   />
                 </div>
               )}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MapPin, ChefHat } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 import heroImg from "@/assets/pollo-entero.png";
 
 const Hero = () => {
@@ -7,7 +8,14 @@ const Hero = () => {
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Pollo a la brasa con papas y ensalada" className="w-full h-full object-cover" />
+        <OptimizedImage 
+          src={heroImg} 
+          alt="Pollo a la brasa con papas y ensalada" 
+          className="w-full h-full object-cover"
+          priority={true}
+          placeholder="blur"
+          context="hero"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/70 to-charcoal/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent" />
       </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 import parrillaCarne from "@/assets/parrilla-carne.png";
 import promoEleccion from "@/assets/promo-eleccion.png";
 import familiaComiendo from "@/assets/familia-comiendo.png";
@@ -65,11 +66,12 @@ const Gallery = () => {
                 className={`overflow-hidden rounded-2xl group cursor-pointer relative ${img.span}`}
               >
                 {/* Image */}
-                <img
+                <OptimizedImage
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                  loading="lazy"
+                  placeholder="skeleton"
+                  context="gallery"
                 />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4 md:p-5">

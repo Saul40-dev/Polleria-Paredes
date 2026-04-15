@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 import logo from "@/assets/logo-paredes.png";
 
 const navItems = [
@@ -20,7 +21,14 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-charcoal/95 backdrop-blur-md border-b border-gold/20">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
         <a href="#inicio" className="flex items-center gap-3">
-          <img src={logo} alt="Pollos y Parrillas Paredes" className="h-12 w-12 object-contain rounded-full" />
+          <OptimizedImage 
+            src={logo} 
+            alt="Pollos y Parrillas Paredes" 
+            className="h-12 w-12 object-contain rounded-full"
+            priority={true}
+            placeholder="blur"
+            context="logo"
+          />
           <span className="font-display text-2xl text-primary-foreground tracking-wide hidden sm:block">
             Paredes
           </span>

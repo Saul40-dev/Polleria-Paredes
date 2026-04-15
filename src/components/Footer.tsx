@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 import logo from "@/assets/logo-paredes.png";
 
 const Footer = () => {
@@ -7,7 +8,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex items-start gap-3">
-            <img src={logo} alt="Logo" className="w-12 h-12 rounded-full object-contain" />
+            <OptimizedImage 
+              src={logo} 
+              alt="Logo" 
+              className="w-12 h-12 rounded-full object-contain"
+              placeholder="blur"
+              context="logo"
+            />
             <div>
               <h3 className="font-display text-xl text-primary-foreground">Pollos y Parrillas Paredes</h3>
               <p className="text-primary-foreground/50 text-sm">Sede Carabayllo</p>
