@@ -1,11 +1,8 @@
 {
-  "images": {
-    "domains": [],
-    "formats": ["image/webp", "image/avif"],
-    "minimumCacheTTL": 31536000,
-    "deviceSizes": [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    "imageSizes": [16, 32, 48, 64, 96, 128, 256, 384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840]
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
   "headers": [
     {
       "source": "/assets/(.*)",
@@ -13,10 +10,6 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
-        },
-        {
-          "key": "Vary",
-          "value": "Accept"
         }
       ]
     },
@@ -28,11 +21,21 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
+    },
+    {
+      "source": "/(.*\\.(js|css|woff|woff2|ttf|otf))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ],
-  "functions": {
-    "src/app/api/**/*.ts": {
-      "maxDuration": 30
+  "rewrites": [
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
-  }
+  ]
 }
