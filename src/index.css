@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 100% 94%;
+    --foreground: 0 0% 11%;
+
+    --card: 43 100% 97%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 43 100% 97%;
+    --popover-foreground: 0 0% 11%;
+
+    --primary: 0 78% 47%;
+    --primary-foreground: 43 100% 97%;
+
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 0 0% 11%;
+
+    --muted: 40 30% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 30% 85%;
+    --input: 40 30% 85%;
+    --ring: 0 78% 47%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --charcoal: 0 0% 11%;
+    --warm-white: 43 100% 94%;
+    --gold: 45 100% 51%;
+    --fire-red: 0 78% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-shadow-hero {
+    text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  }
+
+  .gradient-fire {
+    background: linear-gradient(135deg, hsl(var(--fire-red)), hsl(var(--gold)));
+  }
+}
