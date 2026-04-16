@@ -52,7 +52,7 @@ const Hero = () => {
               Ver menú
             </a>
             <a
-              href="https://wa.me/5115490114?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
+              href="https://wa.me/51982059159?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold text-charcoal font-semibold px-8 py-3.5 rounded-lg text-lg hover:brightness-110 transition"

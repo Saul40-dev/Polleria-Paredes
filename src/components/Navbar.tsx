@@ -45,7 +45,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://wa.me/5115490114?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
+            href="https://wa.me/51982059159?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-fire text-primary-foreground font-semibold px-5 py-2 rounded-lg text-sm hover:opacity-90 transition-opacity"
@@ -83,7 +83,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="https://wa.me/5115490114?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
+                href="https://wa.me/51982059159?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-fire text-primary-foreground font-semibold px-6 py-3 rounded-lg"

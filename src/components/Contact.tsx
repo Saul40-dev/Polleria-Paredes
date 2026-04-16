@@ -8,7 +8,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Hola, soy ${form.nombre}. ${form.mensaje} (Tel: ${form.telefono})`;
-    window.open(`https://wa.me/5115490114?text=${encodeURIComponent(msg)}`, "_blank");
+    window.open(`https://wa.me/51982059159?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
   return (
@@ -61,13 +61,13 @@ const Contact = () => {
           </form>
 
           <div className="space-y-6 flex flex-col justify-center">
-            <a href="tel:+5115490114" className="flex items-center gap-4 group">
+            <a href="tel:+51982059159" className="flex items-center gap-4 group">
               <div className="w-12 h-12 rounded-full bg-fire-red/10 flex items-center justify-center group-hover:bg-fire-red/20 transition">
                 <Phone className="text-fire-red" size={22} />
               </div>
               <div>
                 <p className="font-semibold text-foreground">Teléfono</p>
-                <p className="text-muted-foreground">+51 1 549 0114</p>
+                <p className="text-muted-foreground">+51 982 059 159</p>
               </div>
             </a>
 
@@ -82,7 +82,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://wa.me/5115490114?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
+              href="https://wa.me/51982059159?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Pollos%20y%20Parrillas%20Paredes."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 group"
